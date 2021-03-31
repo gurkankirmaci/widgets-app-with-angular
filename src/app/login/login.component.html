@@ -1,0 +1,21 @@
+<md-card>
+  <md-card-header>
+    <md-card-title>
+      <h1>Login</h1>
+    </md-card-title>
+  </md-card-header>
+  <form  [formGroup]="login" (submit)="submit(login)" novalidate >
+    <md-card-content>
+      <md-input-container class="full-width">
+        <input type="text"  mdInput  formControlName="username"  placeholder="Username">
+      </md-input-container>
+      <md-input-container class="full-width">
+        <input type="password" mdInput  formControlName="password" placeholder="Password">
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <button type="submit" md-button>Subscribe!</button>
+      <button type="button" md-button (click)="reset()" >Cancel</button>
+    </md-card-actions>
+  </form>
+</md-card>
